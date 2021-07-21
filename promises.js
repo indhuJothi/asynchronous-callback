@@ -1,6 +1,6 @@
 let done = true
 const IsDone = new Promise((resolve,reject)=>{
-    if(done=false){
+    if(done){ // if you assign done= false the reject will give the res
         const workdone= 'The work is done'
         resolve(workdone)
     }
